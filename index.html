@@ -18,11 +18,15 @@
 
 <link href="css/color/cadet-blue.css" rel="stylesheet" type="text/css" />
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 
 </head>
-<body class="home fixed-header">
-	<div id="page" class="hfeed site">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body class="home fixed-header"  >
+	<div id="page" class="hfeed site" ng-app="chim3ralanding" ng-controller="myCtrl">
+
 		<header id="masthead" class="site-header header-v1">
 			<!-- the menu -->
 			<div class="header-top">
@@ -130,7 +134,7 @@
 			</div>
 		</header >
 		<!-- slider -->
-		<div class="main-slider">
+		<div class="main-slider" >
 			<div id="overview" class="slider-1 content-section">
 				<div class="tp-banner-container">
 					<div class="tp-banner-1">
@@ -197,7 +201,7 @@
 									data-endelementdelay="0.1"
 									data-endspeed="500"
 									style="z-index: 3; white-space: nowrap;">
-									<img src="images/04/img-slider.png" alt=""/>
+									<!-- <img src="images/04/img-slider.png" alt=""/> -->
 								</div>
 							</li>
 						</ul>
@@ -206,7 +210,7 @@
 			</div>
 		</div>
 		<!-- the content -->
-		<div id="main" class="wrapper">
+		<div id="main" class="wrapper" >
 			<div id="primary" class="content-area">
 				<!-- icon services -->
 				<div class="icon-services">
@@ -218,7 +222,8 @@
 									<span class="pe-7s-paint-bucket"></span>
 								</div>
 								<div class="desc text-center">
-									<h3>Unique Design</h3>
+									<h3>Unique Design </h3>	<span ng-bind="test"></span>
+
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 								</div>
 							</div>
@@ -252,125 +257,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- refresh-phone -->
-				<!-- <div class="refresh-phone padding-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="title-block">
-									<div class="riven-heading text-center" data-sr="enter top wait 0.3s">
-										<h2>
-											<span>Refresh</span> Your phone
-										</h2>
-									</div>
-								</div>
-								<div class="refresh-phone-content">
-									<div class="text-desc">
-										<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									</div>
-									<a class="btn btn-primary ubtn">More Features</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="refresh-img">
-						<img src="images/img-bg-2.png" alt=""/>
-					</div>
-				</div> -->
-				<!-- features -->
-			<!-- 	<div id="features" class="features padding-content bg-gradient content-section">
-					<div class="container">
-						<div class="row">
-							<div class="title-block">
-								<div class="riven-heading text-center text-white" data-sr="enter bottom wait 0.3s">
-									<h2>
-										  Amazing <span>Features</span>
-									</h2>
-								 </div>
-							</div>
-							<div class="features-content">
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<ul class="smile_icon_list left circle with_bg">
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-area-chart" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>Clean Design</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-globe" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>54 languages</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-user-md" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>5000+ Supporters</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-								<div class="col-md-4 hidden-sm hidden-xs text-center">
-									<img src="images/315x650.png" alt=""/>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<ul class="smile_icon_list right circle with_bg">
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-shield" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>Fast Connect</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-stethoscope" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>Free update</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-										<li class="icon_list_item">
-											<div class="icon_list_icon">
-												<i class="fa fa-life-ring" aria-hidden="true"></i>
-											</div>
-											<div class="icon_description">
-												<h3>60+ Themmes</h3>
-												<div class="icon_description_text">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					   <div class="spacer-100"></div>
-				</div> -->
 				<!-- some facts -->
 				<div class="padding-content some-facts">
 					<div class="container">
@@ -386,8 +272,9 @@
 								<div class="amount-content bg-gradient">
 									<div class="amount">
 										<div class="amount-desc">
-											<h3 id="counter">1991</h3>
-											<h5 >Calls</h5>
+											<!-- <span ng-bind="test"></span> -->
+											<h3 id="counter" ng-bind="SomeFacts.TotalUsers" ></h3>
+											<h5 >Total Users</h5>
 										</div>
 									</div>
 									<div class="img-icon">
@@ -399,8 +286,8 @@
 								<div class="amount-content bg-gradient">
 									<div class="amount">
 										<div class="amount-desc">
-											<h3 id="counter-1">10000</h3>
-											<h5 >User</h5>
+											<h3 id="counter-1" ng-bind="SomeFacts.CompletedQuests"></h3>
+											<h5 >Completed Quests</h5>
 										</div>
 									</div>
 									<div class="img-icon">
@@ -412,8 +299,8 @@
 								<div class="amount-content bg-gradient">
 									<div class="amount">
 										<div class="amount-desc">
-											<h3  id="counter-2">10000</h3>
-											<h5>Downloads</h5>
+											<h3  id="counter-2" ng-bind="SomeFacts.ActiveUsers"></h3>
+											<h5>Active Users</h5>
 										</div>
 									</div>
 									<div class="img-icon">
@@ -425,8 +312,8 @@
 								<div class="amount-content bg-gradient">
 									<div class="amount">
 										<div class="amount-desc">
-											<h3  id="counter-3">2390</h3>
-											<h5>Mails</h5>
+											<h3  id="counter-3" ng-bind="SomeFacts.EventsCompleted"></h3>
+											<h5>Events</h5>
 										</div>
 									</div>
 									<div class="img-icon">
@@ -437,797 +324,7 @@
 						</div>
 					</div>
 				</div>
-				<!--app screenshot-->
-				<!-- <div class="app_screenshot">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12 title-block">
-								<div class="riven-heading text-left" data-sr="enter bottom wait 0.3s">
-									<h2><span>App</span> Screenshot</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="slider-app bg-gray">
-						<div class="spacer-35"></div>
-						<div class="tp-banner-container">
-							<div class="tp-banner-app">
-								<ul>
-									<li data-saveperformance="on" data-masterspeed="500" data-slotamount="7" data-title="Slide" data-ssop="true"  data-hideslideonmobile="off" data-hideafterloop="0" data-transition="slideremoveleft">
-										<div class="tp-caption tp-resizeme"
-											data-x="59"
-											data-y="164"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 4; font-weight:400; max-height: 96px; min-height: 96px;  min-width: 445px; max-width: 445px; letter-spacing: 0; text-transform: none; font-size: 14px; line-height:22px; color:#fff; max-width: auto; white-space: normal;">
-											<div class="screen-default app-screen-1 open">
-												<h3>Menu Layout</h3>
-												<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a  class="next_layout_1">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-2">
-												<h3>Content Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_2">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-3">
-												<h3>Footer Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_3">Next Layout</a>
-											</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="566"
-											data-y="123"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 5; border-color: rgb(36, 36, 36); border-style: solid; border-width: 8px; border-radius: 8px; line-height: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="848"
-											data-y="129"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 6; box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1115"
-											data-y="131"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 7;box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="641"
-											data-y="235"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 8; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span  class="apps-default button-app active">app1</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="732"
-											data-y="350"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 9; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app2">app2</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="643"
-											data-y="446"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 10; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app3">app3</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="944"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Login</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1208"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Profile</div>
-										</div>
-									</li>
-									<li data-saveperformance="on" data-masterspeed="500" data-slotamount="7" data-title="Slide" data-ssop="true"  data-hideslideonmobile="off" data-hideafterloop="0" data-transition="slideremoveleft">
-										<div class="tp-caption tp-resizeme"
-											data-x="59"
-											data-y="164"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 4; font-weight:400; max-height: 96px; min-height: 96px;  min-width: 445px; max-width: 445px; letter-spacing: 0; text-transform: none; font-size: 14px; line-height:22px; color:#fff; max-width: auto; white-space: normal;">
-											<div class="screen-default app-screen-1 open">
-												<h3>Menu Layout</h3>
-												<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a  class="next_layout_1">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-2">
-												<h3>Content Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_2">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-3">
-												<h3>Footer Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_3">Next Layout</a>
-											</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="566"
-											data-y="123"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 5; border-color: rgb(36, 36, 36); border-style: solid; border-width: 8px; border-radius: 8px; line-height: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="848"
-											data-y="129"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 6; box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1115"
-											data-y="131"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 7;box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="641"
-											data-y="235"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 8; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span  class="apps-default button-app active">app1</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="732"
-											data-y="350"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 9; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app2">app2</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="643"
-											data-y="446"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 10; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app3">app3</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="944"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Profile</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1208"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Review</div>
-										</div>
-									</li>
-									<li data-saveperformance="on" data-masterspeed="500" data-slotamount="7" data-title="Slide" data-ssop="true"  data-hideslideonmobile="off" data-hideafterloop="0" data-transition="slideremoveleft">
-										<div class="tp-caption tp-resizeme"
-											data-x="59"
-											data-y="164"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 4; font-weight:400; max-height: 96px; min-height: 96px;  min-width: 445px; max-width: 445px; letter-spacing: 0; text-transform: none; font-size: 14px; line-height:22px; color:#fff; max-width: auto; white-space: normal;">
-											<div class="screen-default app-screen-1 open">
-												<h3>Menu Layout</h3>
-												<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a  class="next_layout_1">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-2">
-												<h3>Content Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_2">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-3">
-												<h3>Footer Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_3">Next Layout</a>
-											</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="566"
-											data-y="123"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 5; border-color: rgb(36, 36, 36); border-style: solid; border-width: 8px; border-radius: 8px; line-height: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="848"
-											data-y="129"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 6; box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1115"
-											data-y="131"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 7;box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="641"
-											data-y="235"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 8; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span  class="apps-default button-app active">app1</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="732"
-											data-y="350"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 9; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app2">app2</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="643"
-											data-y="446"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 10; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app3">app3</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="944"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Review</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1208"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Menu</div>
-										</div>
-									</li>
-									<li data-saveperformance="on" data-masterspeed="500" data-slotamount="7" data-title="Slide" data-ssop="true"  data-hideslideonmobile="off" data-hideafterloop="0" data-transition="slideremoveleft">
-										<div class="tp-caption tp-resizeme"
-											data-x="59"
-											data-y="164"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 4; font-weight:400; max-height: 96px; min-height: 96px;  min-width: 445px; max-width: 445px; letter-spacing: 0; text-transform: none; font-size: 14px; line-height:22px; color:#fff; max-width: auto; white-space: normal;">
-											<div class="screen-default app-screen-1 open">
-												<h3>Menu Layout</h3>
-												<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a  class="next_layout_1">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-2">
-												<h3>Content Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_2">Next Layout</a>
-											</div>
-											<div class="screen-default app-screen-3">
-												<h3>Footer Layout</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-												<p>
-												 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Aliquam tempus ultricies tincidunt. Donec nunc felis, egestas eu pellentesque a, ultricies non lectus. Ut lacinia erat ut diam volutpat, at mattis lacus placerat. Phasellus eget aliquet urna. Nullam sit amet turpis ornare, pulvinar lectus in, cursus mi. Duis et nunc eu ligula imperdiet vulputate in mattis elit. Duis sodales tempor pulvinar. Quisque quis mi egestas turpis dignissim tincidunt sed vel neque. Quisque nec facilisis sem. In at commodo velit. Aliquam tempor volutpat laoreet. Aliquam tempus
-												</p>
-												<a class="next_layout_3">Next Layout</a>
-											</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="566"
-											data-y="123"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 5; border-color: rgb(36, 36, 36); border-style: solid; border-width: 8px; border-radius: 8px; line-height: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: normal; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="848"
-											data-y="129"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 6; box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1115"
-											data-y="131"
-											data-speed="1000"
-											data-start="500"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 7;box-shadow: 10px 15px 25px 0px rgba(0, 0, 0, 0.35); line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none;">
-											<img src="images/04/slide-1.jpg" alt=""/>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="641"
-											data-y="235"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 8; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span  class="apps-default button-app active">app1</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="732"
-											data-y="350"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 9; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app2">app2</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="643"
-											data-y="446"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 10; font-weight:400; letter-spacing: 0; text-transform: none; font-size: 20px; line-height:22px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">
-											<span class="apps-default button-app3">app3</span>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="944"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Menu</div>
-										</div>
-										<div class="tp-caption tp-resizeme"
-											data-x="1208"
-											data-y="571"
-											data-speed="300"
-											data-start="300"
-											data-easing="Power4.easeOut"
-											data-splitin="none"
-											data-splitout="none"
-											data-elementdelay="0.01"
-											data-endelementdelay="0.1"
-											data-endspeed="500"
-											data-endeasing="Power4.easeIn"
-											style="z-index: 11; ">
-											<div  style="line-height: 22px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px;" class="title-app">Login</div>
-										</div>
-									</li>
-								</ul>
-								<div class="tp-static-layers">
-									<div class="tp-caption tp-resizeme tp-static-layer rev-static-visbile"
-										data-x="556"
-										data-y="66"
-										data-speed="1000"
-										data-start="500"
-										data-easing="Power4.easeOut"
-										data-splitin="none"
-										data-splitout="none"
-										data-elementdelay="0.01"
-										data-endelementdelay="0.1"
-										data-endspeed="500"
-										data-endeasing="Power4.easeIn"
-										style="z-index:3; width: 273px; height: 578px; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px;">
-										<img src="images/04/iphone.png" alt=""/>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="spacer-100"></div>
-					</div>
-				</div>-->
-				<!--why choose riven -->
-				<!-- <div class="choose-riven">
-					<div class="spacer-95"></div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12"></div>
-							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-								<div class="title-block">
-									<div class="riven-heading text-left " data-sr="enter left wait 0.3s">
-										<h2>
-											<span>Why </span>Choose riven
-										</h2>
-									</div>
-									<div class="spacer-50"></div>
-								</div>
-								<div id="accordion" class="panel-group">
-									<div class="panel panel-default">
-										  <div class="panel-heading ">
-												 <h4 class="panel-title  active ">
-														<a class="accordion-toggle" href="#collapse1" data-parent="#accordion" data-toggle="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit<span class="indicator indicator-mimus pe-7s-angle-down"></span></a>
-												 </h4>
-										  </div>
-										  <div class="panel-collapse collapse in" id="collapse1">
-												 <div class="panel-body">
-														<p>
-														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-												 </div>
-										  </div>
-									</div>
-									<div class="panel panel-default">
-										  <div class="panel-heading">
-												 <h4 class="panel-title">
-														<a class="accordion-toggle" href="#collapse2" data-parent="#accordion" data-toggle="collapse">Vivamus cursus placerat porttitor<span class="indicator pe-7s-angle-down"></span></a>
-												 </h4>
-										  </div>
-										  <div class="panel-collapse collapse " id="collapse2">
-												 <div class="panel-body">
-														<p>
-														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-												 </div>
-										  </div>
-									</div>
-									<div class="panel panel-default">
-										  <div class="panel-heading">
-												 <h4 class="panel-title">
-														<a class="accordion-toggle" href="#collapse3" data-parent="#accordion" data-toggle="collapse">Suspendisse elit odio, faucibus nec vulputate nec<span class="indicator pe-7s-angle-down"></span></a>
-												 </h4>
-										  </div>
-										  <div class="panel-collapse collapse" id="collapse3">
-												 <div class="panel-body">
-														<p>
-														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-												 </div>
-										  </div>
-									</div>
-									<div class="panel panel-default">
-										  <div class="panel-heading">
-												 <h4 class="panel-title">
-														<a class="accordion-toggle" href="#collapse4" data-parent="#accordion" data-toggle="collapse">Aliquam erat volutpat. In hac habitasse platea <span class="indicator pe-7s-angle-down"></span></a>
-												 </h4>
-										  </div>
-										  <div class="panel-collapse collapse" id="collapse4">
-												 <div class="panel-body">
-														<p>
-														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-												 </div>
-										  </div>
-								   </div>
-								</div>
-							</div>
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="image-choose wpb_single_image">
-									<img src="images/background/bg-whychoose.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- video-->
-		<!-- 		<div class="video-home">
-					<div class="bg-gradient">
-						<div class="riven-container container  video-container">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="wpb_text_column wpb_content_element ">
-										<div class="wpb_wrapper">
-											<p><a class="fancybox btn-play" title="Play video" href="https://player.vimeo.com/video/105217354?autoplay=1" data-type="iframe">Play video</a></p>
 
-										</div>
-									</div>
-									<div class="spacer-20"></div>
-									<div class="title-block">
-										<div class="riven-heading text-center">
-											<h2> <span>Wow!</span> The best application ever </h2>
-										</div>
-									</div>
-
-									<div class="wpb_text_column wpb_content_element ">
-										<div class="wpb_wrapper">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
 				<!--our team-->
 				<div id="our_team" class="our-team content-section">
 					<div class="spacer-90"></div>
@@ -1240,7 +337,7 @@
 											Our <span>Team</span>
 										</h2>
 									</div>
-									<p class="text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</p>
+									<p class="text text-center">Meet the latest and greatest of this project!</p>
 								</div>
 							</div>
 							<div class="our-team-content">
@@ -1327,7 +424,7 @@
 			                                    <li class="social-gg"><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
 			                                    <li class="social-twitter"><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
 			                                    <li class="social-linkedin"><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
-			                                    <li class="social-youtube"><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
+																					<li class ="social-youtube"><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
 											 </ul>
 										</div>
 									</div>
@@ -1353,44 +450,27 @@
 							<div class="blog-container ">
 								<div class="blog-content ">
 									<div id="blogPosts" class="blog_post has-loadmore">
-										<script type="text/javascript">
-
-
-											$.ajax({
-  url: "https://fd0f65b6.ngrok.io/api/announcements",
-  success: function(data){
-  		console.log(data);
-
-  		data.forEach(function(e){
-  				$( "#blogPosts" ).append()
-  		})
-
-  }
-});
-
-										</script>
-
-
 										<div class="col-md-6 col-sm-6 col-xs-12">
 											<div class="blog-content">
 												<div class="blog-item blog-ful">
 													<div class="blog-img ">
-														<a href="event-lightbox.html" class="various fancybox.ajax">
-															<img class="img-responsive" width="555" height="450" src="images/555x450.jpg" alt="blog-img">
+														<!-- <a data-ng-click="open(NewsBig.id)" ng-href="" > -->
+															<img class="img-responsive" width="555" height="450" ng-src="{{NewsBig.img}}" alt="blog-img">
 														</a>
 												   </div>
 													<div class="blog-main bg-gradient">
 													   <div class="blog_post_info">
 															<span class="blog-date">
-															  	18 august 2018
+															  	{{NewsBig.date}}
 															 </span>
 													   </div>
 														<div class="blog_post_content">
 															<h3 class="title-blogpost">
-																<a href="event-lightbox.html" class="various fancybox.ajax">Project Start</a>
+																<!-- <a href="event-lightbox.html" class="various fancybox.ajax">{{NewsBig.title}}</a> -->
+																<span class="various fancybox.ajax">>{{NewsBig.title}}</span>
 															</h3>
 															<div class="blog_post_desc">
-																We have started working on the project. The road ahead may be long, but we are armed with patience and a sense of duty for the gaming community everywhere.
+															{{NewsBig.body}}
 															</div>
 														</div>
 													</div>
@@ -1401,22 +481,23 @@
 											<div class="blog-content blog-content-right">
 												<div class="blog-item">
 													<div class="blog-img hover-link blog-left">
-														<a class="bg-gradient" href="#">
-															<img class="img-responsive" width="164" height="116" src="images/164x116.jpg" alt="blog-img">
+														<!-- <a class="bg-gradient" href="#"> -->
+															<img class="img-responsive" width="164" height="116" ng-src="{{NewsSmall1.img}}" alt="blog-img">
 														</a>
 													</div>
 													<div class="blog-main blog-right">
 														<div class="blog_post_info">
 															<span class="blog-date">
-																-----
+																{{NewsSmall1.date}}
 															</span>
 														</div>
 														<div class="blog_post_content">
 															<h3 class="title-blogpost">
-																<a href="#">To be announced...</a>
+																<!-- <a href="#">{{NewsSmall1.title}}</a> -->
+																<span>{{NewsSmall1.title}}</span>
 															</h3>
 															<div class="blog_post_desc">
-
+																{{NewsSmall1.body}}
 															</div>
 														</div>
 													</div>
@@ -1425,21 +506,23 @@
 											<div class="blog-content blog-content-right">
 												<div class="blog-item">
 													<div class="blog-img hover-link blog-left">
-														<a class="bg-gradient" href="#">
-															<img class="img-responsive" width="164" height="116" src="images/164x116.jpg" alt="blog-img">
+														<!-- <a class="bg-gradient" href="#"> -->
+															<img class="img-responsive" width="164" height="116" ng-src="{{NewsSmall2.img}}" alt="blog-img">
 														</a>
 													</div>
 													<div class="blog-main blog-right">
 														<div class="blog_post_info">
 															<span class="blog-date">
-															  -----
+															  {{NewsSmall2.date}}
 															</span>
 														</div>
 														<div class="blog_post_content">
 															<h3 class="title-blogpost">
-																<a href="#">To be announced...</a>
+																<!-- <a href="#">{{NewsSmall2.title}}</a> -->
+																<span>{{NewsSmall2.title}}</span>
 															</h3>
 															<div class="blog_post_desc">
+																{{NewsSmall2.body}}
 															</div>
 														</div>
 													</div>
@@ -1448,21 +531,23 @@
 											<div class="blog-content blog-content-right">
 												<div class="blog-item">
 													<div class="blog-img hover-link blog-left">
-														<a class="bg-gradient" href="#">
-															<img class="img-responsive" width="164" height="116" src="images/164x116.jpg" alt="blog-img">
+														<!-- <a class="bg-gradient" href="#"> -->
+															<img class="img-responsive" width="164" height="116" ng-src="{{NewsSmall3.img}}" alt="blog-img">
 														</a>
 													</div>
 													<div class="blog-main blog-right">
 														<div class="blog_post_info">
 															<span class="blog-date">
-															 -----
+															 {{NewsSmall3.date}}
 															</span>
 														</div>
 														<div class="blog_post_content">
 															<h3 class="title-blogpost">
-																<a href="#">To be announced...</a>
+																<!-- <a href="#">{{NewsSmall3.title}}</a> -->
+																<span>{{NewsSmall3.title}}</span>
 															</h3>
 															<div class="blog_post_desc">
+																{{NewsSmall3.body}}
 															</div>
 														</div>
 													</div>
@@ -1475,99 +560,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Event Calendar -->
-				<!-- <div id="event_calendar" class="padding-content content-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="riven-heading text-center" data-sr="enter bottom wait 0.3s">
-									<h2><span>Event</span> Calendar</h2>
-									<p class="text">Roadmap for this awesome project!</p>
-								</div>
-							</div>
-						</div>
-						<div class="spacer-35"></div>
-						<div class="event-container">
-							<div class="event-contents row">
-								<div class="event event_post event-entries-wrap has-loadmore">
-									<div class="event-content col-md-6 col-sm-12 col-xs-12">
-										<div class="row row-event">
-											<div class="event-box-conner col-md-10 col-sm-10 col-xs-10">
-												<div class="event_post_content bg-gradient">
-													<div class="event-thumb">
-														<img width="456" height="215" alt="event" src="images/pizza.jpg" class="event-img">
-													</div>
-													<div class="event-desc">
-														<h3 class="title-eventpost">
-															<a href="event-lightbox.html" class="various fancybox.ajax">Initial meeting</a>
-														</h3>
-														<div class="event_post_desc">
-															The concept and the name ware decided thanks to Toskana Hasdeu!
-														</div>
-														<a href="event-lightbox.html" class="detail various fancybox.ajax">Detail</a>
-													</div>
-												</div>
-											</div>
-											<div class="event-box-center col-md-2 col-sm-2 col-xs-2">
-												<div class="event_post_date">Aug 16</div>
-											</div>
-										</div>
-									</div>
-									<div class="event-content col-md-6 col-sm-12 col-xs-12">
-										<div class="row row-event">
-											<div class="event-box-conner col-md-10 col-sm-10 col-xs-10">
-												<div class="event_post_content bg-gradient">
-													<div class="event-thumb">
-														<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1695565.730725377!2d-118.05879700000001!3d33.89862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1468402239832"></iframe>
-													</div>
-													<div class="event-desc">
-														<h3 class="title-eventpost">
-															<a href="event-lightbox.html" class="various fancybox.ajax">Meeting CEO Android</a>
-														</h3>
-														<div class="event_post_desc">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel leo quis velit egestas placerat ut ultricies magna. Vivamus erat sem, pulvinar eu molestie vitae, dignissim molestie nunc.
-														</div>
-														<a href="event-lightbox.html" class="detail various fancybox.ajax">Detail</a>
-													</div>
-												</div>
-											</div>
-											<div class="event-box-center col-md-2 col-sm-2 col-xs-2">
-												<div class="event_post_date">Mar 30</div>
-											</div>
-										</div>
-									</div>
-									<div class="event-content col-md-6 col-sm-12 col-xs-12">
-										<div class="row row-event">
-											<div class="event-box-conner col-md-10 col-sm-10 col-xs-10">
-												<div class="event_post_content bg-gradient">
-													<div class="event-thumb">
-														<img width="456" height="215" alt="event" src="images/455x215.jpg" class="event-img">
-													</div>
-													<div class="event-desc">
-														<h3 class="title-eventpost">
-															<a href="event-lightbox.html" class="various fancybox.ajax">Release Beta Version</a>
-														</h3>
-														<div class="event_post_desc">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel leo quis velit egestas placerat ut ultricies magna. Vivamus erat sem, pulvinar eu molestie vitae, dignissim molestie nunc.
-														</div>
-														<a href="event-lightbox.html" class="detail various fancybox.ajax">Detail</a>
-													</div>
-												</div>
-											</div>
-											<div class="event-box-center col-md-2 col-sm-2 col-xs-2">
-												<div class="event_post_date">Mar 30</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								 <div class="load-more event-loadmore text-center">
-									<a id="event-loadmore">Load More</a>
-								</div>
-							</div>
-						</div>
-						<div class="spacer-100"></div>
-					</div>
-				</div> -->
+
 				<!-- Testimonials -->
 				<div id="review" class="">
 					<div class="testimonials bg-gradient">
@@ -1603,126 +596,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Pricing Table -->
-			<!-- 	<div id="pricing_table" class="padding-content pricing-table bg-gray content-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="riven-heading text-center" data-sr="enter bottom wait 0.3s">
-									 <h2>Pricing <span>Table</span></h2>
-									 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</p>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="pricing-content bg-gradient">
-									<div class="box-info">
-										<div class="pricing-title text center">
-											<h3>Personal</h3>
-										</div>
-										<div class="price bg-gradient">
-											<div class="price-box">
-												<div class="price-center">
-													<span>$50</span>
-													<p>monthly</p>
-												</div>
-											</div>
-										</div>
-										<div class="pricing-desc">
-											<ul class="pricing-list">
-												<li><i class="fa fa-check"></i> Unlimited Photos</li>
-												<li><i class="fa fa-check"></i> Secure Online Transfer</li>
-												<li><i class="fa fa-check"></i> Unlimited Styles</li>
-												<li class="erro"><i class="fa fa-close"></i> Cloud Storage</li>
-												<li class="erro"><i class="fa fa-close"></i> 24/7 Customer Service</li>
-												<li class="erro"><i class="fa fa-close"></i> Automatic Backup</li>
-											</ul>
-										</div>
-										<div class="pricing-sign">
-											<a class="btn btn-default" href="#">Sign up</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="pricing-content bg-gradient">
-									<div class="box-info">
-										<div class="pricing-title text center">
-											<h3>Business</h3>
-										</div>
-										<div class="price bg-gradient">
-											<div class="price-box">
-												<div class="price-center">
-													<span>$70</span>
-													<p>monthly</p>
-												</div>
-											</div>
-										</div>
-										<div class="pricing-desc">
-											<ul class="pricing-list">
-												<li><i class="fa fa-check"></i> Unlimited Photos</li>
-												<li><i class="fa fa-check"></i> Secure Online Transfer</li>
-												<li><i class="fa fa-check"></i> Unlimited Styles</li>
-												<li class="erro"><i class="fa fa-close"></i> Cloud Storage</li>
-												<li class="erro"><i class="fa fa-close"></i> 24/7 Customer Service</li>
-												<li class="erro"><i class="fa fa-close"></i> Automatic Backup</li>
-											</ul>
-										</div>
-										<div class="pricing-sign">
-											<a class="btn btn-default" href="#">Sign up</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4 col-xs-12">
-								<div class="pricing-content bg-gradient">
-									<div class="box-info">
-										<div class="pricing-title text center">
-											<h3>Ultimate</h3>
-										</div>
-										<div class="price bg-gradient">
-											<div class="price-box">
-												<div class="price-center">
-													<span>$90</span>
-													<p>monthly</p>
-												</div>
-											</div>
-										</div>
-										<div class="pricing-desc">
-											<ul class="pricing-list">
-												<li><i class="fa fa-check"></i> Unlimited Photos</li>
-												<li><i class="fa fa-check"></i> Secure Online Transfer</li>
-												<li><i class="fa fa-check"></i> Unlimited Styles</li>
-												<li class="erro"><i class="fa fa-close"></i> Cloud Storage</li>
-												<li class="erro"><i class="fa fa-close"></i> 24/7 Customer Service</li>
-												<li class="erro"><i class="fa fa-close"></i> Automatic Backup</li>
-											</ul>
-										</div>
-										<div class="pricing-sign">
-											<a class="btn btn-default" href="#">Sign up</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- Get App -->
-				<!-- <div class="get-app bg-gradient">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 col-sm-12 col-xs-12">
-								<div class="riven-heading text-center color-white" data-sr="enter bottom wait 0.3s">
-									<h2><span>Get</span> App</h2>
-								</div>
-								<div class="get-app-content">
-									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</p>
-									<a href="#" class="btn btn-default btn-icon btn-icon-1">Download for<br><span>Apple IOS</span></a>
-									<a href="#" class="btn btn-default btn-icon btn-icon-2">Download for<br><span>Android</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
+
 				<!-- Get In Touch -->
 				<div id="get_in_touch" class="contact-box padding-content content-section">
 					<div class="container">
@@ -1730,7 +604,7 @@
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="riven-heading text-center" data-sr="enter bottom wait 0.3s">
 									<h2><span>Get In</span> Touch</h2>
-									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque.</p>
+									<p class="text">Stay up to date with all the chim3ra news on different platforms</p>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-4 col-xs-12">
@@ -1818,7 +692,7 @@
 										<div class="mc4wp-form-fields">
 											<div class="newsletter_1 title-block">
 												<h2>Join Our <span>Newsletter</span></h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+												<p>Stay in touch through regular newsletters</p>
 											</div>
 											<div class="form-newletter">
 												<input type="email" placeholder="Enter your email" name="email" class="input placeholder">
@@ -1849,7 +723,7 @@
 		</footer>
 	</div>
 	<!--- define script files -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
@@ -1873,6 +747,68 @@
 	<script type="text/javascript" src="js/jquery.nav.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script>
+
+var app = angular.module("chim3ralanding", []);
+
+
+app.controller("myCtrl", function($scope) {
+	//SOME FACTS
+	$scope.test = 'zxczxc'
+$.get( "https://reqres.in/api/users", function( data ) {
+	console.log(data)
+	$scope.$apply(function(){
+	$scope.SomeFacts = {};
+ $scope.SomeFacts.TotalUsers = data.data[0].id;
+ $scope.SomeFacts.CompletedQuests = data.data[0].id;
+ $scope.SomeFacts.ActiveUsers = data.data[1].id;
+ $scope.SomeFacts.EventsCompleted = data.data[1].id;
+ console.log($scope.SomeFacts)
+
+	})
+ });
+
+//NEWS
+$.get("https://jsonplaceholder.typicode.com/photos",function(data){
+	console.log(data)
+	$scope.$apply(function(){
+		$scope.NewsBig={
+			id: data[0].id,
+			title:data[0].title,
+			date: data[0].url,
+			body:data[0].url,
+			img:data[0].url};
+		$scope.NewsSmall1 = {title:data[1].title,
+			date: data[1].url,
+			body:data[1].url,
+			img:data[1].url};
+		$scope.NewsSmall2 = {title:data[2].title,
+			date: data[2].url,
+			body:data[2].url,
+			img:data[2].url};
+		$scope.NewsSmall3 = {title:data[3].title,
+			date: data[3].url,
+			body:data[3].url,
+			img:data[3].url};
+	})
+})
+
+// $scope.openNews = function (id) {
+// console.log("zxczxc")
+//   var modalInstance = $modal.open({
+//     templateUrl: 'event-lightabox.html',
+//     resolve: {
+//       items: function () {
+//         return $scope.items;
+//       }
+//     }
+//   });
+
+// };
+
+
+});
+</script>
 	<a class="scroll-to-top"><i class="fa fa-chevron-up"></i></a>
 </body>
 </html>
