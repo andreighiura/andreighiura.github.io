@@ -68,11 +68,11 @@
 											</ul> -->
 										</li>
 										<li class="menu-item current"><a href="#overview">Overview</a></li>
-										<li class="menu-item"><a href="#features">Features</a></li>
+										<li class="menu-item"><a href="#facts">Facts</a></li>
 										<li class="menu-item"><a href="#our_team">Our Team</a></li>
 										<li class="menu-item"><a href="#latest_news">Latest News</a></li>
-										<li class="menu-item"><a href="#event_calendar">Event Calendar</a></li>
-								<!-- 		<li class="menu-item"><a href="#pricing_table">Pricing Table</a></li> -->
+										<!-- <li class="menu-item"><a href="#event_calendar">Event Calendar</a></li>-->
+										<!--<li class="menu-item"><a href="#pricing_table">Pricing Table</a></li>-->
 										<li class="menu-item"><a href="#get_in_touch">Get In Touch</a></li>
 									</ul>
 								</div>
@@ -94,7 +94,7 @@
 							<nav class="main-navigation" id="sticky-navigation">
 								<div class="menu-onepage-applanding-container">
 									<ul class="mega-menu" id="menu-onepage-applanding-1">
-										<li class="menu-item current-menu-parent menu-item-has-children page_item_has_children">
+										<!-- <li class="menu-item current-menu-parent menu-item-has-children page_item_has_children">
 											<a href="index.html">Home</a>
 											<span aria-expanded="true" role="menubar" data-toggle="dropdown" class="dropdown-toggle caret"><i class="fa fa-chevron-down"></i></span>
 											<ul class="children dropdown-menu">
@@ -117,13 +117,13 @@
 													<a href="bussiness.html">Bussiness</a>
 												</li>
 											</ul>
-										</li>
+										</li> -->
 										<li class="menu-item current"><a href="#overview">Overview</a></li>
-										<li class="menu-item"><a href="#features">Features</a></li>
+										<li class="menu-item"><a href="#facts">Facts</a></li>
 										<li class="menu-item"><a href="#our_team">Our Team</a></li>
 										<li class="menu-item"><a href="#latest_news">Latest News</a></li>
-										<li class="menu-item"><a href="#event_calendar">Event Calendar</a></li>
-										<li class="menu-item"><a href="#pricing_table">Pricing Table</a></li>
+										<!-- <li class="menu-item"><a href="#event_calendar">Event Calendar</a></li> -->
+										<!-- <li class="menu-item"><a href="#pricing_table">Pricing Table</a></li> -->
 										<li class="menu-item"><a href="#get_in_touch">Get In Touch</a></li>
 									</ul>
 								</div>
@@ -258,7 +258,7 @@
 					</div>
 				</div>
 				<!-- some facts -->
-				<div class="padding-content some-facts">
+				<div id="facts" class="padding-content some-facts">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12 col-sm-12 col-xs-12">
@@ -278,7 +278,7 @@
 										</div>
 									</div>
 									<div class="img-icon">
-									 <i class="fa fa-phone"></i>
+									 <i class="fa fa-users"></i>
 									</div>
 								</div>
 							</div>
@@ -291,7 +291,7 @@
 										</div>
 									</div>
 									<div class="img-icon">
-									 <i class="fa fa-user"></i>
+									 <i class="fa fa-exclamation"></i>
 									</div>
 								</div>
 							</div>
@@ -299,12 +299,12 @@
 								<div class="amount-content bg-gradient">
 									<div class="amount">
 										<div class="amount-desc">
-											<h3  id="counter-2" ng-bind="SomeFacts.ActiveUsers"></h3>
-											<h5>Active Users</h5>
+											<h3  id="counter-2" ng-bind="SomeFacts.SupportedGames"></h3>
+											<h5>Supported Games</h5>
 										</div>
 									</div>
 									<div class="img-icon">
-									 <i class="fa fa-cloud-download"></i>
+									 <i class="fa fa-gamepad"></i>
 									</div>
 								</div>
 							</div>
@@ -317,7 +317,7 @@
 										</div>
 									</div>
 									<div class="img-icon">
-									 <i class="fa fa-envelope"></i>
+									 <i class="fa fa-calendar"></i>
 									</div>
 								</div>
 							</div>
@@ -346,7 +346,7 @@
 										<figure class="member-img bg-gradient">
 											<div class="img-profile hover-link">
 												<div class="bg-gradient">
-													<img src="images/team/ghiura.jpg" alt="member" width="137" height="137">
+													<img src="images/team/ghiura.jpg" alt="member" width="136" height="136">
 												</div>
 											</div>
 										</figure>
@@ -368,7 +368,7 @@
 										<figure class="member-img bg-gradient">
 											<div class="img-profile hover-link">
 												<div class="bg-gradient">
-													<img src="images/team/grigoriu.png" alt="member" width="137" height="137">
+													<img src="images/team/grigoriu.png" alt="member" width="136" height="136">
 												</div>
 											</div>
 										</figure>
@@ -390,7 +390,7 @@
 										<figure class="member-img bg-gradient">
 											<div class="img-profile hover-link">
 												<div class="bg-gradient">
-													<img src="images/team/porutiu.jpg" alt="member" width="137" height="137">
+													<img src="images/team/porutiu.jpg" alt="member" width="136" height="136">
 												</div>
 											</div>
 										</figure>
@@ -412,7 +412,7 @@
 										<figure class="member-img bg-gradient">
 											<div class="img-profile hover-link">
 												<div class="bg-gradient">
-													<img src="images/team/matean.png" alt="member" width="137" height="137">
+													<img src="images/team/matean.png" alt="member" width="136" height="136">
 												</div>
 											</div>
 										</figure>
@@ -619,18 +619,19 @@
 											<h5>Phone Number</h5>
 											<a href="callto:206-853-7599">206-853-7599</a>
 										</li> -->
-										<!-- <li>
+										<li>
 											<h5>Email Address</h5>
-											<a href="mailto:hr@yourdomain.com">hr@yourdomain.com</a>
-										</li> -->
+											<a href="mailto:pr@chim3ra.com">pr@chim3ra.com</a>
+										</li>
 										<li>
 											<h5>Find us elsewhere</h5>
 											<ul class="social-networks">
-												<li class="social-fb first"><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li class="social-gg"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-												<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												<li class="social-youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+												<li class="social-fb first"><a href="https://www.facebook.com/Chim3raGaming/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+												<li class="social-insta"><a href="https://www.instagram.com/Chim3raGaming/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+												<li class="social-twitter"><a href="https://twitter.com/Chim3raGaming" target="_blank"><i class="fa fa-twitter"></i></a></li>
+												<li class="social-twitch"><a href="https://www.twitch.tv/Chim3raGaming" target="_blank"><i class="fa fa-twitch"></i></a></li>
+												<!-- <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
+												<!-- <li class="social-youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li> -->
 											</ul>
 										</li>
 									</ul>
@@ -761,7 +762,7 @@ $.get( "https://reqres.in/api/users", function( data ) {
 	$scope.SomeFacts = {};
  $scope.SomeFacts.TotalUsers = data.data[0].id;
  $scope.SomeFacts.CompletedQuests = data.data[0].id;
- $scope.SomeFacts.ActiveUsers = data.data[1].id;
+ $scope.SomeFacts.SupportedGames = data.data[1].id;
  $scope.SomeFacts.EventsCompleted = data.data[1].id;
  console.log($scope.SomeFacts)
 

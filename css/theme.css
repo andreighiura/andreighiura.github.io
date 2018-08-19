@@ -1949,10 +1949,10 @@ address a {
       -moz-animation: 0.3s ease-in-out 0s normal none 1 running icon-social-hover;
       -webkit-animation: 0.3s ease-in-out 0s normal none 1 running icon-social-hover;
       -o-animation: 0.3s ease-in-out 0s normal none 1 running icon-social-hover; }
-  .social-networks li.social-gg a {
-    background: #e3563b; }
-  .social-networks li.social-gg:hover {
-    border: 1px solid #e3563b; }
+  .social-networks li.social-insta a {
+    background: #cd486b; }
+  .social-networks li.social-insta:hover {
+    border: 1px solid #cd486b; }
   .social-networks li.social-twitter a {
     background: #55acee; }
   .social-networks li.social-twitter:hover {
@@ -1965,6 +1965,10 @@ address a {
     background: #c4302b; }
   .social-networks li.social-youtube:hover {
     border: 1px solid #c4302b; }
+  .social-networks li.social-twitch a {
+    background: #6441a4; }
+  .social-networks li.social-twitch:hover {
+    border: 1px solid #6441a4; }
 
 @-moz-keyframes icon-social-hover {
   from {
@@ -3459,9 +3463,9 @@ iframe {
   border: none;
   width: 100%; }
 
-.lightbox-content.popup-content img {
+/*.lightbox-content.popup-content img {
   width: 1000px;
-  height: 350px; }
+  height: 350px; }*/
 
 .gmap {
   height: 540px;
@@ -3622,22 +3626,24 @@ iframe {
     .social-url.social-networks li:hover a {
       color: #fff;
       background: #405e94; }
-  .social-url.social-networks li.social-gg:hover a {
-    background: #e3563b; }
+  .social-url.social-networks li.social-insta:hover a {
+    background: #cd486b; }
   .social-url.social-networks li.social-twitter:hover a {
     background: #55acee; }
   .social-url.social-networks li.social-linkedin:hover a {
     background: #087ec6; }
   .social-url.social-networks li.social-youtube:hover a {
     background: #c4302b; }
+  .social-url.social-networks li.social-twitch:hover a {
+    background: #6441a4; }  
   .social-url.social-networks li a {
     color: #696868;
     font-weight: 400;
     background: none;
     margin-right: 0; }
-  .social-url.social-networks li.social-gg:hover, .social-url.social-networks li.social-twitter:hover, .social-url.social-networks li.social-linkedin:hover, .social-url.social-networks li.social-youtube:hover {
+  .social-url.social-networks li.social-insta:hover, .social-url.social-networks li.social-twitter:hover, .social-url.social-networks li.social-linkedin:hover, .social-url.social-networks li.social-youtube:hover, .social-url.social-networks li.social-twitch:hover {
     border: none; }
-  .social-url.social-networks li.social-gg a, .social-url.social-networks li.social-twitter a, .social-url.social-networks li.social-linkedin a, .social-url.social-networks li.social-youtube a {
+  .social-url.social-networks li.social-insta a, .social-url.social-networks li.social-twitter a, .social-url.social-networks li.social-linkedin a, .social-url.social-networks li.social-youtube a, .social-url.social-networks li.social-twitch a {
     background: none; }
 
 .our-team-2 .vc_column-inner {
@@ -11199,4 +11205,50 @@ div.wpcf7-validation-errors {
     margin-left: 180px !important;
     margin-top: 20px !important; } }
 
+  .ourteam-heading{
+    margin-top: 10px;
+  }
+  .ourteam-heading span{
+    font-weight: 700;
+  }
+  .ourteam-container{
+    margin-bottom: 20px;
+  }
+    .ourteam-container .row{
+      margin: 0;
+    }
+  .ourteam-info {
+    text-align: center;
+  }
+    .ourteam-info h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+    .ourteam-info h3 span{
+      font-weight: 700;
+    }
+  .ourteam-img {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  height: 150px;
+  vertical-align: middle;
+  display: table;
+  border-radius: 50%; }
+  .ourteam-img .img-profile {
+    width: 140px;
+    height: 140px;
+    vertical-align: middle;
+    background: #fff;
+    position: relative;
+    border-radius: 50%;
+    margin: 5px auto;
+    display: table; 
+  }
+  .ourteam-img .img-profile img {
+    border-radius: 50%; 
+  }
 /*# sourceMappingURL=theme.css.map */
