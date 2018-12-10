@@ -29,6 +29,17 @@ body:not(.fixed-header) .header-v3 .mega-menu > li a:hover{
 .app_screenshot .apps-default.active::after, .btn.btn-icon:hover, .btn.btn-icon:focus, .btn.btn-icon:active, .btn.btn-icon:active:focus, .btn.btn-icon:focus:active {
   border: 1px solid #3c98ec !important;
 }
+
+
+.icon-services .icon-inner span,
+.tp-banner-container .text-bg{
+  color: #3c98ec !important;
+}
+
+.slider-1 .slotholder::before{
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #302f63 0%, #3c98ec 100%, #6a97c0 100%) repeat scroll 0 0;
+}
+
 .scroll-to-top, .event-2 .row-event:hover .event_post_content {
   border: 2px solid #3c98ec;
 }
