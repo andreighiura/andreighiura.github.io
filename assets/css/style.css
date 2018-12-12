@@ -377,9 +377,9 @@ Button
 }
 .btn-primary{
     color: #fff;
-    background-color: #4e0101;
+    background-color: #600000c2;
     border:1px solid;
-    border-color: rgb(255, 3, 3);
+    border-color: #600000;
 
 }
 .btn-primary:hover{
@@ -396,8 +396,8 @@ Button
 }
 .btn-default:hover{
     color: #fff;
-    background-color: #4e0101;
-    border-color: #4e0101;
+    background-color: #600000c2;
+    border-color: #600000;
 }
 
 
