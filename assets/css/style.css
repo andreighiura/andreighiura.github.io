@@ -895,7 +895,7 @@ Home Section style
     background: url(../images/home-bg.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
-    padding-top: 100px;
+    padding-top: 150px;
     width:100%;
 }
 .main_home .home_text h2{
