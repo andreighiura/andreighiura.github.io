@@ -220,7 +220,7 @@ h5,
 h6 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color:#1a1a1a;
+    color:#600000;
     margin-bottom: 10px;
 }
 
@@ -386,6 +386,19 @@ Button
     background-color: #eee;
     border-color: #eee;
     color:#4e0101;
+}
+
+.btn-secondary{
+    color: #600000;
+    background-color: #ffffff;
+    border:1px solid;
+    border-color: #600000;
+
+}
+.btn-secondary:hover{
+    background-color: #600000;
+    border-color: #eee;
+    color:#eee;
 }
 
 .btn-default{
